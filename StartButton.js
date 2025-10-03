@@ -1,9 +1,9 @@
 import React from "react";
-import { StyleSheet, TouchableOpacity, Text, View } from 'react-native';
+import { StyleSheet, TouchableOpacity, Text, View, OnPress} from 'react-native';
 
-export default function StartButton() {
+export default function StartButton({ onPress }) {
   return (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={onPress}>
       <View style={styles.button}>
         <Text style={styles.buttonText}>Start Swiping</Text>
       </View>
